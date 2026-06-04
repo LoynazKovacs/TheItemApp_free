@@ -1,0 +1,132 @@
+[
+  {
+    "_id": {
+      "$oid": "910000000000000000030001"
+    },
+    "key": "free_demo_weather",
+    "collection": "free_demo_weather",
+    "title": "Demo: Weather Week",
+    "titleSingular": "Weather Day",
+    "titlePlural": "Weather Week",
+    "description": "Example model shipped with the Free playground. A 7-day weather forecast — exactly the kind of throwaway dataset an agent would create to answer \"chart me the weather this week\". Rendered on the Free home dashboard as a table, a pivot, and a chart so you can see the same data three ways.",
+    "ai": {
+      "purpose": "Demonstrate the playground loop: a model + data + built-in visual prefabs, fully namespaced to the Free app.",
+      "howItWorks": "Each row is one day. `highC`/`lowC` are the temperature band; `condition` is a categorical enum good for pivots; `precipMm` is a numeric measure. This is a template — agents create their own `free_*` models the same way.",
+      "manipulation": "Throwaway demo data. Safe to edit or delete; it reseeds on the next Free deploy."
+    },
+    "icon": "lucide:cloud-sun",
+    "appId": {
+      "$oid": "910000000000000000000001"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "day",
+        "date",
+        "highC",
+        "lowC",
+        "condition"
+      ],
+      "properties": {
+        "day": {
+          "type": "string",
+          "title": "Day",
+          "description": "Weekday name (Mon, Tue, …)."
+        },
+        "date": {
+          "type": "string",
+          "title": "Date",
+          "format": "date",
+          "description": "Calendar date — sorts chronologically, good as a chart x-axis."
+        },
+        "highC": {
+          "type": "number",
+          "title": "High °C",
+          "description": "Daytime high temperature in Celsius."
+        },
+        "lowC": {
+          "type": "number",
+          "title": "Low °C",
+          "description": "Overnight low temperature in Celsius."
+        },
+        "condition": {
+          "type": "string",
+          "title": "Condition",
+          "enum": [
+            "sunny",
+            "cloudy",
+            "rain",
+            "storm",
+            "snow",
+            "fog"
+          ],
+          "description": "Categorical sky condition — good axis for a pivot or bar chart."
+        },
+        "precipMm": {
+          "type": "number",
+          "title": "Precipitation (mm)",
+          "default": 0,
+          "description": "Expected precipitation in millimetres."
+        }
+      }
+    },
+    "ui": {
+      "display": {
+        "templates": [
+          "{{day}} — {{condition}}"
+        ]
+      },
+      "prefabs": {
+        "list": "list",
+        "edit": "edit",
+        "show": "show"
+      }
+    },
+    "api": {
+      "crud": true,
+      "realtime": true
+    },
+    "auth": {
+      "read": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "create": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "edit": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "delete": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          }
+        ]
+      }
+    },
+    "tier": 1,
+    "kind": "transaction"
+  }
+]

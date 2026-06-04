@@ -1,0 +1,100 @@
+[
+  {
+    "_id": {
+      "$oid": "910000000000000000070001"
+    },
+    "modelId": {
+      "$oid": "910000000000000000030001"
+    },
+    "name": "Weekly Temperature",
+    "data": {
+      "kind": "aggregate",
+      "aggregation": {
+        "rows": [
+          "date"
+        ],
+        "columns": [],
+        "values": [
+          {
+            "op": "max",
+            "field": "highC",
+            "as": "highC"
+          },
+          {
+            "op": "max",
+            "field": "lowC",
+            "as": "lowC"
+          }
+        ]
+      }
+    },
+    "map": {
+      "datasetFields": []
+    },
+    "builder": {
+      "version": 1,
+      "data": {
+        "kind": "aggregate",
+        "query": {},
+        "sort": "date",
+        "limit": 500,
+        "aggregation": {
+          "rows": [
+            "date"
+          ],
+          "columns": [],
+          "values": [
+            {
+              "op": "max",
+              "field": "highC",
+              "as": "highC"
+            },
+            {
+              "op": "max",
+              "field": "lowC",
+              "as": "lowC"
+            }
+          ]
+        }
+      },
+      "mapping": {
+        "datasetFields": [],
+        "dropNulls": false
+      },
+      "chart": {
+        "type": "line",
+        "showLegend": true,
+        "showTooltip": true,
+        "stack": false,
+        "smooth": true,
+        "rotateXLabels": false,
+        "enableZoom": false,
+        "xKey": "",
+        "yKeys": []
+      },
+      "formatting": {},
+      "formatters": {},
+      "advanced": {
+        "optionOverrides": {
+          "title": {
+            "text": "Weekly Temperature (°C)",
+            "left": "center"
+          },
+          "tooltip": {
+            "trigger": "axis"
+          },
+          "grid": {
+            "left": 50,
+            "right": 30,
+            "top": 60,
+            "bottom": 50
+          }
+        }
+      }
+    },
+    "isDefault": true,
+    "pinned": true,
+    "order": 1,
+    "systemManaged": true
+  }
+]

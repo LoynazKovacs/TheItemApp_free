@@ -1,0 +1,14 @@
+node_modules/
+.env
+*.log
+.DS_Store
+.claude/
+.screenshots/
+
+# --- secrets hygiene ---
+.env
+.env.*
+!.env.example
+.secrets/
+*.pem
+*.key

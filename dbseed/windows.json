@@ -1,0 +1,119 @@
+[
+  {
+    "_id": {
+      "$oid": "910000000000000000020001"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Weather Week — Table",
+    "icon": "lucide:table",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "910000000000000000030001"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060001"
+    },
+    "prefabConfig": {
+      "collection": "free_demo_weather",
+      "query": {},
+      "groupBy": []
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000020002"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Condition Breakdown — Pivot",
+    "icon": "lucide:bar-chart-3",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "910000000000000000030001"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060007"
+    },
+    "prefabConfig": {
+      "aggregation": {
+        "rows": [
+          "condition"
+        ],
+        "columns": [],
+        "values": [
+          {
+            "op": "count",
+            "field": "_id",
+            "as": "days"
+          },
+          {
+            "op": "sum",
+            "field": "precipMm",
+            "as": "precipMm"
+          }
+        ]
+      },
+      "ui": {
+        "showGrandTotals": true
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000020003"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Weekly Temperature — Chart",
+    "icon": "lucide:line-chart",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "910000000000000000030001"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060008"
+    },
+    "prefabConfig": {
+      "collection": "free_demo_weather",
+      "query": {},
+      "ui": {
+        "chart": {
+          "viewId": {
+            "$oid": "910000000000000000070001"
+          }
+        },
+        "filterBar": {
+          "showActiveFiltersTop": false
+        }
+      }
+    },
+    "systemManaged": true
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "free",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Free — a schema playground for agents. Create data models on the fly and visualize them with the platform's built-in chart/pivot/table prefabs, fully namespaced so they never contaminate other apps.",
+  "scripts": {
+    "start": "docker compose up -d --build",
+    "stop": "docker compose down",
+    "up": "docker compose up -d --build",
+    "down": "docker compose down",
+    "logs": "docker compose logs -f"
+  }
+}

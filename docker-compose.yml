@@ -1,0 +1,22 @@
+# Free app — joins core's theitemapp network.
+# Usage: docker compose up -d --build
+#
+# Seed-only sandbox: ships an example data model (free_demo_weather) + a home
+# dashboard that renders it as a chart, a pivot, and a table. Agents create
+# their own `free_*` models at runtime — the playground that never touches
+# another app's schema. All UI is core's built-in chart/pivot/list prefabs.
+
+services:
+  free-seeds:
+    user: "1000:1000"
+    build:
+      context: .
+      dockerfile: Dockerfile.seeds
+    environment:
+      APP_REGISTRATION_KEY: "${APP_REGISTRATION_KEY:-}"
+    restart: unless-stopped
+
+networks:
+  default:
+    name: theitemapp
+    external: true

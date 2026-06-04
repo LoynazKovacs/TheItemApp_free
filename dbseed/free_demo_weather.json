@@ -1,0 +1,79 @@
+[
+  {
+    "_id": {
+      "$oid": "910000000000000000080001"
+    },
+    "day": "Mon",
+    "date": "2026-06-01T00:00:00.000Z",
+    "highC": 22,
+    "lowC": 12,
+    "condition": "sunny",
+    "precipMm": 0
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000080002"
+    },
+    "day": "Tue",
+    "date": "2026-06-02T00:00:00.000Z",
+    "highC": 24,
+    "lowC": 13,
+    "condition": "sunny",
+    "precipMm": 0
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000080003"
+    },
+    "day": "Wed",
+    "date": "2026-06-03T00:00:00.000Z",
+    "highC": 19,
+    "lowC": 11,
+    "condition": "cloudy",
+    "precipMm": 2
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000080004"
+    },
+    "day": "Thu",
+    "date": "2026-06-04T00:00:00.000Z",
+    "highC": 16,
+    "lowC": 10,
+    "condition": "rain",
+    "precipMm": 11
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000080005"
+    },
+    "day": "Fri",
+    "date": "2026-06-05T00:00:00.000Z",
+    "highC": 15,
+    "lowC": 9,
+    "condition": "storm",
+    "precipMm": 18
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000080006"
+    },
+    "day": "Sat",
+    "date": "2026-06-06T00:00:00.000Z",
+    "highC": 18,
+    "lowC": 10,
+    "condition": "cloudy",
+    "precipMm": 3
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000080007"
+    },
+    "day": "Sun",
+    "date": "2026-06-07T00:00:00.000Z",
+    "highC": 21,
+    "lowC": 12,
+    "condition": "sunny",
+    "precipMm": 0
+  }
+]

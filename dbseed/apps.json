@@ -1,0 +1,23 @@
+[
+  {
+    "_id": {
+      "$oid": "910000000000000000000001"
+    },
+    "key": "free",
+    "name": "Free",
+    "description": "A schema playground for agents. Spin up data models on the fly, drop data into them, and render the result with the platform's built-in chart / pivot / table / calendar prefabs — all without touching any other app's schema. Everything created here is namespaced to the Free app, so it never contaminates production models.",
+    "icon": "lucide:flask-conical",
+    "enabled": true,
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "ai": {
+      "systemPrompt": "Free is a sandbox app for AI agents to VISUALIZE data on demand. When a user asks you to show, chart, or tabulate some data you have fetched (from an MCP, an API, a calculation — anything), build it here instead of inventing fields on a real app's models.\n\nThe loop:\n1. CREATE A MODEL — `data.create('items', { ... })` with: a `key` and `collection` BOTH prefixed `free_` (e.g. `free_weather_week`), `appId` = '910000000000000000000001', a JSON-schema `schema`, `api`: { crud: true, realtime: true }, and an `auth` block granting read/create/edit/delete to groups ['7000000000000000001d0001','7000000000000000001d0002'] (Admins + Everyone). Set `ui.prefabs` = { list:'list', edit:'edit', show:'show' } and a `ui.display.templates` entry.\n2. ADD DATA — the new collection is live the instant the items record is written. Insert rows via the dynamic HTTP API `POST /api/dynamic/free_<name>` (the theitemapp MCP's modelKey list is fixed per session, so a brand-new collection won't appear there until the next session — the HTTP API always works).\n3. VISUALIZE — create `windows` records bound to the model with a built-in prefab: `pivot` (700000000000000000060007, inline `aggregation` config — no extra records needed), `chart` (700000000000000000060008, needs an `item_chart_views` record referenced via prefabConfig.ui.chart.viewId), `list`/`table` (700000000000000000060001), `calendar`, `kanban`, `gallery`, `tree`. Optionally group several windows into a `dashboards` record.\n4. SHOW IT — reference a `windows/<id>` inline in your reply and it renders live in chat; or point the user at the Free home dashboard.\n\nClean up demo junk when you're done. Never create `free_` models outside this app or write non-`free_` collections from here. The whole point is an isolated playground.\n\nSee the skill `free-playground-visualization` for copy-paste templates."
+    }
+  }
+]
