@@ -1,6 +1,428 @@
 [
   {
     "_id": {
+      "$oid": "6a2471a6644b16df299dd62b"
+    },
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "name": "Avg Price by Category",
+    "data": {
+      "kind": "aggregate",
+      "aggregation": {
+        "rows": [
+          "categoryId"
+        ],
+        "columns": [],
+        "values": [
+          {
+            "op": "avg",
+            "field": "priceEur",
+            "as": "avgPrice"
+          }
+        ]
+      }
+    },
+    "map": {
+      "datasetFields": []
+    },
+    "builder": {
+      "version": 1,
+      "data": {
+        "kind": "aggregate",
+        "query": {},
+        "sort": "",
+        "limit": 500,
+        "aggregation": {
+          "rows": [
+            "categoryId"
+          ],
+          "columns": [],
+          "values": [
+            {
+              "op": "avg",
+              "field": "priceEur",
+              "as": "avgPrice"
+            }
+          ]
+        }
+      },
+      "mapping": {
+        "datasetFields": [],
+        "dropNulls": true
+      },
+      "chart": {
+        "type": "bar",
+        "showLegend": false,
+        "showTooltip": true,
+        "stack": false,
+        "smooth": false,
+        "rotateXLabels": true,
+        "enableZoom": false,
+        "xKey": "",
+        "yKeys": [],
+        "pieNameKey": "",
+        "pieValueKey": ""
+      },
+      "formatting": {},
+      "formatters": {},
+      "advanced": {
+        "optionOverrides": {
+          "title": {
+            "text": "Avg Asking Price by Category (€)",
+            "left": "center"
+          },
+          "tooltip": {
+            "trigger": "axis"
+          },
+          "grid": {
+            "left": 60,
+            "right": 30,
+            "top": 60,
+            "bottom": 70
+          }
+        }
+      }
+    },
+    "isDefault": false,
+    "pinned": false,
+    "order": 10,
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471a9644b16df299ddadb"
+    },
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "name": "Fuel Mix",
+    "data": {
+      "kind": "aggregate",
+      "aggregation": {
+        "rows": [
+          "fuel"
+        ],
+        "columns": [],
+        "values": [
+          {
+            "op": "count",
+            "field": "_id",
+            "as": "count"
+          }
+        ]
+      }
+    },
+    "map": {
+      "datasetFields": []
+    },
+    "builder": {
+      "version": 1,
+      "data": {
+        "kind": "aggregate",
+        "query": {},
+        "sort": "",
+        "limit": 500,
+        "aggregation": {
+          "rows": [
+            "fuel"
+          ],
+          "columns": [],
+          "values": [
+            {
+              "op": "count",
+              "field": "_id",
+              "as": "count"
+            }
+          ]
+        }
+      },
+      "mapping": {
+        "datasetFields": [],
+        "dropNulls": true
+      },
+      "chart": {
+        "type": "pie",
+        "showLegend": true,
+        "showTooltip": true,
+        "stack": false,
+        "smooth": false,
+        "rotateXLabels": false,
+        "enableZoom": false,
+        "xKey": "",
+        "yKeys": [],
+        "pieNameKey": "",
+        "pieValueKey": ""
+      },
+      "formatting": {},
+      "formatters": {},
+      "advanced": {
+        "optionOverrides": {}
+      }
+    },
+    "isDefault": false,
+    "pinned": false,
+    "order": 11,
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471ad644b16df299ddafc"
+    },
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "name": "Drivetrain Mix",
+    "data": {
+      "kind": "aggregate",
+      "aggregation": {
+        "rows": [
+          "driveType"
+        ],
+        "columns": [],
+        "values": [
+          {
+            "op": "count",
+            "field": "_id",
+            "as": "count"
+          }
+        ]
+      }
+    },
+    "map": {
+      "datasetFields": []
+    },
+    "builder": {
+      "version": 1,
+      "data": {
+        "kind": "aggregate",
+        "query": {},
+        "sort": "",
+        "limit": 500,
+        "aggregation": {
+          "rows": [
+            "driveType"
+          ],
+          "columns": [],
+          "values": [
+            {
+              "op": "count",
+              "field": "_id",
+              "as": "count"
+            }
+          ]
+        }
+      },
+      "mapping": {
+        "datasetFields": [],
+        "dropNulls": true
+      },
+      "chart": {
+        "type": "pie",
+        "showLegend": true,
+        "showTooltip": true,
+        "stack": false,
+        "smooth": false,
+        "rotateXLabels": false,
+        "enableZoom": false,
+        "xKey": "",
+        "yKeys": [],
+        "pieNameKey": "",
+        "pieValueKey": ""
+      },
+      "formatting": {},
+      "formatters": {},
+      "advanced": {
+        "optionOverrides": {}
+      }
+    },
+    "isDefault": false,
+    "pinned": false,
+    "order": 12,
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471af644b16df299ddf9a"
+    },
+    "modelId": {
+      "$oid": "6a221a11fb16ca24d92d620b"
+    },
+    "name": "Makes by Country",
+    "data": {
+      "kind": "aggregate",
+      "aggregation": {
+        "rows": [
+          "country"
+        ],
+        "columns": [],
+        "values": [
+          {
+            "op": "count",
+            "field": "_id",
+            "as": "count"
+          }
+        ]
+      }
+    },
+    "map": {
+      "datasetFields": []
+    },
+    "builder": {
+      "version": 1,
+      "data": {
+        "kind": "aggregate",
+        "query": {},
+        "sort": "",
+        "limit": 500,
+        "aggregation": {
+          "rows": [
+            "country"
+          ],
+          "columns": [],
+          "values": [
+            {
+              "op": "count",
+              "field": "_id",
+              "as": "count"
+            }
+          ]
+        }
+      },
+      "mapping": {
+        "datasetFields": [],
+        "dropNulls": true
+      },
+      "chart": {
+        "type": "bar",
+        "showLegend": false,
+        "showTooltip": true,
+        "stack": false,
+        "smooth": false,
+        "rotateXLabels": true,
+        "enableZoom": false,
+        "xKey": "",
+        "yKeys": [],
+        "pieNameKey": "",
+        "pieValueKey": ""
+      },
+      "formatting": {},
+      "formatters": {},
+      "advanced": {
+        "optionOverrides": {
+          "title": {
+            "text": "Brands by Country of Origin",
+            "left": "center"
+          },
+          "tooltip": {
+            "trigger": "axis"
+          },
+          "grid": {
+            "left": 40,
+            "right": 30,
+            "top": 60,
+            "bottom": 70
+          }
+        }
+      }
+    },
+    "isDefault": false,
+    "pinned": false,
+    "order": 13,
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471b3644b16df299ddfc1"
+    },
+    "modelId": {
+      "$oid": "6a221a19fb16ca24d92d660f"
+    },
+    "name": "Distance from Budapest",
+    "data": {
+      "kind": "aggregate",
+      "aggregation": {
+        "rows": [
+          "name"
+        ],
+        "columns": [],
+        "values": [
+          {
+            "op": "max",
+            "field": "distanceFromBudapestKm",
+            "as": "km"
+          }
+        ]
+      }
+    },
+    "map": {
+      "datasetFields": []
+    },
+    "builder": {
+      "version": 1,
+      "data": {
+        "kind": "aggregate",
+        "query": {},
+        "sort": "",
+        "limit": 500,
+        "aggregation": {
+          "rows": [
+            "name"
+          ],
+          "columns": [],
+          "values": [
+            {
+              "op": "max",
+              "field": "distanceFromBudapestKm",
+              "as": "km"
+            }
+          ]
+        }
+      },
+      "mapping": {
+        "datasetFields": [],
+        "dropNulls": true
+      },
+      "chart": {
+        "type": "bar",
+        "showLegend": false,
+        "showTooltip": true,
+        "stack": false,
+        "smooth": false,
+        "rotateXLabels": true,
+        "enableZoom": false,
+        "xKey": "",
+        "yKeys": [],
+        "pieNameKey": "",
+        "pieValueKey": ""
+      },
+      "formatting": {},
+      "formatters": {},
+      "advanced": {
+        "optionOverrides": {
+          "title": {
+            "text": "Trail Distance from Budapest (km)",
+            "left": "center"
+          },
+          "tooltip": {
+            "trigger": "axis"
+          },
+          "grid": {
+            "left": 50,
+            "right": 30,
+            "top": 60,
+            "bottom": 90
+          }
+        }
+      }
+    },
+    "isDefault": false,
+    "pinned": false,
+    "order": 14,
+    "systemManaged": true
+  },
+  {
+    "_id": {
       "$oid": "910000000000000000070001"
     },
     "modelId": {

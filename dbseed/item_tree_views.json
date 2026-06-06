@@ -1,0 +1,136 @@
+[
+  {
+    "_id": {
+      "$oid": "6a247195644b16df299dd12a"
+    },
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "name": "Vehicle Listings",
+    "groupBy": [],
+    "rowDensity": "comfortable",
+    "showAvatar": true,
+    "avatarField": "categoryId",
+    "avatarShape": "square",
+    "showTitle": true,
+    "titleField": "title",
+    "titleWeight": "bold",
+    "showSubtitle": true,
+    "subtitleField": "locationId",
+    "subtitleLines": 1,
+    "showRightTop": true,
+    "rightTopField": "priceEur",
+    "rightTopActionKeys": [],
+    "showRightMiddle": true,
+    "rightMiddleField": "categoryId",
+    "rightMiddleActionKeys": [],
+    "showRightBottom": true,
+    "rightBottomField": "fuel",
+    "rightBottomKind": "badge",
+    "rightBottomActionKeys": [],
+    "sortFields": [
+      {
+        "field": "priceEur",
+        "dir": "asc"
+      }
+    ],
+    "isDefault": false,
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a247197644b16df299dd132"
+    },
+    "modelId": {
+      "$oid": "6a221a11fb16ca24d92d620b"
+    },
+    "name": "Makes",
+    "groupBy": [],
+    "rowDensity": "comfortable",
+    "showAvatar": true,
+    "avatarShape": "square",
+    "showTitle": true,
+    "titleField": "name",
+    "titleWeight": "bold",
+    "showSubtitle": true,
+    "subtitleField": "reputation",
+    "subtitleLines": 2,
+    "showRightTop": true,
+    "rightTopField": "country",
+    "rightTopActionKeys": [],
+    "rightMiddleActionKeys": [],
+    "rightBottomActionKeys": [],
+    "sortFields": [
+      {
+        "field": "name",
+        "dir": "asc"
+      }
+    ],
+    "isDefault": false,
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a247199644b16df299dd137"
+    },
+    "modelId": {
+      "$oid": "6a221a15fb16ca24d92d621f"
+    },
+    "name": "Categories",
+    "groupBy": [],
+    "rowDensity": "comfortable",
+    "showAvatar": true,
+    "avatarShape": "square",
+    "showTitle": true,
+    "titleField": "name",
+    "titleWeight": "bold",
+    "showSubtitle": true,
+    "subtitleField": "description",
+    "subtitleLines": 2,
+    "showRightTop": true,
+    "rightTopField": "bestFor",
+    "rightTopActionKeys": [],
+    "rightMiddleActionKeys": [],
+    "rightBottomActionKeys": [],
+    "sortFields": [
+      {
+        "field": "name",
+        "dir": "asc"
+      }
+    ],
+    "isDefault": false,
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a24719b644b16df299dd14d"
+    },
+    "modelId": {
+      "$oid": "6a221a19fb16ca24d92d660f"
+    },
+    "name": "Locations",
+    "groupBy": [],
+    "rowDensity": "comfortable",
+    "showAvatar": true,
+    "avatarShape": "square",
+    "showTitle": true,
+    "titleField": "name",
+    "titleWeight": "bold",
+    "showSubtitle": true,
+    "subtitleField": "region",
+    "subtitleLines": 1,
+    "showRightTop": true,
+    "rightTopField": "distanceFromBudapestKm",
+    "rightTopActionKeys": [],
+    "rightMiddleActionKeys": [],
+    "rightBottomActionKeys": [],
+    "sortFields": [
+      {
+        "field": "distanceFromBudapestKm",
+        "dir": "asc"
+      }
+    ],
+    "isDefault": false,
+    "systemManaged": true
+  }
+]

@@ -1,6 +1,525 @@
 [
   {
     "_id": {
+      "$oid": "6a2471dd644b16df299df3a9"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Playground at a glance",
+    "icon": "lucide:gauge",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060019"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_vehicles",
+      "ui": {
+        "kpi": {
+          "columns": 5,
+          "metrics": [
+            {
+              "label": "Weather Days",
+              "icon": "lucide:cloud-sun",
+              "op": "count",
+              "collection": "free_demo_weather",
+              "color": "#0891b2"
+            },
+            {
+              "label": "Vehicles",
+              "icon": "lucide:car-front",
+              "op": "count",
+              "collection": "free_offroad_vehicles",
+              "color": "#7c3aed"
+            },
+            {
+              "label": "Makes",
+              "icon": "lucide:badge",
+              "op": "count",
+              "collection": "free_offroad_makes",
+              "color": "#2563eb"
+            },
+            {
+              "label": "Categories",
+              "icon": "lucide:layers",
+              "op": "count",
+              "collection": "free_offroad_categories",
+              "color": "#16a34a"
+            },
+            {
+              "label": "Locations",
+              "icon": "lucide:map-pin",
+              "op": "count",
+              "collection": "free_offroad_locations",
+              "color": "#d97706"
+            }
+          ]
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471de644b16df299df564"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Filters",
+    "icon": "lucide:filter",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060015"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_vehicles"
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471e0644b16df299df84c"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Weather Week — Calendar",
+    "icon": "lucide:calendar-days",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "910000000000000000030001"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060009"
+    },
+    "prefabConfig": {
+      "collection": "free_demo_weather",
+      "query": {},
+      "sort": "",
+      "ui": {
+        "calendar": {
+          "dateField": "date",
+          "titleField": "day",
+          "view": "dayGridMonth"
+        },
+        "filterBar": {
+          "showActiveFiltersTop": false
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471e2644b16df299df86f"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Vehicle Listings",
+    "icon": "lucide:car-front",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "prefabId": {
+      "$oid": "70000000000000000006000b"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_vehicles",
+      "ui": {
+        "tree": {
+          "viewId": {
+            "$oid": "6a247195644b16df299dd12a"
+          }
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471e4644b16df299df873"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Avg Price by Category",
+    "icon": "lucide:bar-chart-3",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060008"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_vehicles",
+      "query": {},
+      "ui": {
+        "chart": {
+          "viewId": {
+            "$oid": "6a2471a6644b16df299dd62b"
+          }
+        },
+        "filterBar": {
+          "showActiveFiltersTop": false
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471e6644b16df299df88c"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Fuel Mix",
+    "icon": "lucide:pie-chart",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060008"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_vehicles",
+      "query": {},
+      "ui": {
+        "chart": {
+          "viewId": {
+            "$oid": "6a2471a9644b16df299ddadb"
+          }
+        },
+        "filterBar": {
+          "showActiveFiltersTop": false
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471e9644b16df299dfa0c"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Drivetrain Mix",
+    "icon": "lucide:pie-chart",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060008"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_vehicles",
+      "query": {},
+      "ui": {
+        "chart": {
+          "viewId": {
+            "$oid": "6a2471ad644b16df299ddafc"
+          }
+        },
+        "filterBar": {
+          "showActiveFiltersTop": false
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471e9644b16df299dfd58"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Category × Condition",
+    "icon": "lucide:table-2",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060007"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_vehicles",
+      "aggregation": {
+        "rows": [
+          "categoryId"
+        ],
+        "columns": [
+          "condition"
+        ],
+        "values": [
+          {
+            "op": "count",
+            "field": "_id",
+            "as": "count"
+          }
+        ]
+      },
+      "ui": {
+        "showGrandTotals": true
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471eb644b16df299dfd61"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Makes",
+    "icon": "lucide:badge",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a11fb16ca24d92d620b"
+    },
+    "prefabId": {
+      "$oid": "70000000000000000006000b"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_makes",
+      "ui": {
+        "tree": {
+          "viewId": {
+            "$oid": "6a247197644b16df299dd132"
+          }
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471ed644b16df299dfd97"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Brands by Country",
+    "icon": "lucide:bar-chart-3",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a11fb16ca24d92d620b"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060008"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_makes",
+      "query": {},
+      "ui": {
+        "chart": {
+          "viewId": {
+            "$oid": "6a2471af644b16df299ddf9a"
+          }
+        },
+        "filterBar": {
+          "showActiveFiltersTop": false
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471ee644b16df299dfdc8"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Categories",
+    "icon": "lucide:layers",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a15fb16ca24d92d621f"
+    },
+    "prefabId": {
+      "$oid": "70000000000000000006000b"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_categories",
+      "ui": {
+        "tree": {
+          "viewId": {
+            "$oid": "6a247199644b16df299dd137"
+          }
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471f1644b16df299dfde1"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Locations",
+    "icon": "lucide:map-pin",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a19fb16ca24d92d660f"
+    },
+    "prefabId": {
+      "$oid": "70000000000000000006000b"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_locations",
+      "ui": {
+        "tree": {
+          "viewId": {
+            "$oid": "6a24719b644b16df299dd14d"
+          }
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
+      "$oid": "6a2471f2644b16df299e026f"
+    },
+    "dashboardId": {
+      "$oid": "910000000000000000010001"
+    },
+    "title": "Trail Distance",
+    "icon": "lucide:route",
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "modelId": {
+      "$oid": "6a221a19fb16ca24d92d660f"
+    },
+    "prefabId": {
+      "$oid": "700000000000000000060008"
+    },
+    "prefabConfig": {
+      "collection": "free_offroad_locations",
+      "query": {},
+      "ui": {
+        "chart": {
+          "viewId": {
+            "$oid": "6a2471b3644b16df299ddfc1"
+          }
+        },
+        "filterBar": {
+          "showActiveFiltersTop": false
+        }
+      }
+    },
+    "systemManaged": true
+  },
+  {
+    "_id": {
       "$oid": "910000000000000000020001"
     },
     "dashboardId": {

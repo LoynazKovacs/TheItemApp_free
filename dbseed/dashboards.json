@@ -1,14 +1,14 @@
 [
   {
     "_id": {
-      "$oid": "910000000000000000010001"
+      "$oid": "6a221ae1fb16ca24d92dae0e"
     },
     "appId": {
       "$oid": "910000000000000000000001"
     },
-    "name": "Free Playground",
-    "icon": "lucide:flask-conical",
-    "isHome": true,
+    "name": "Off-Road Shopping",
+    "icon": "lucide:car-front",
+    "isHome": false,
     "groupIds": [
       {
         "$oid": "7000000000000000001d0001"
@@ -26,30 +26,202 @@
     "tiles": [
       {
         "windowId": {
-          "$oid": "910000000000000000020003"
+          "$oid": "6a221ab7fb16ca24d92dadc6"
         },
         "x": 0,
         "y": 0,
-        "cols": 8,
+        "cols": 7,
         "rows": 4
       },
       {
         "windowId": {
-          "$oid": "910000000000000000020002"
+          "$oid": "6a221ab4fb16ca24d92dadbe"
         },
-        "x": 8,
+        "x": 7,
         "y": 0,
-        "cols": 4,
+        "cols": 5,
         "rows": 4
+      },
+      {
+        "windowId": {
+          "$oid": "6a221ab2fb16ca24d92da9a1"
+        },
+        "x": 0,
+        "y": 4,
+        "cols": 12,
+        "rows": 5
+      }
+    ],
+    "systemManaged": false
+  },
+  {
+    "_id": {
+      "$oid": "910000000000000000010001"
+    },
+    "appId": {
+      "$oid": "910000000000000000000001"
+    },
+    "name": "Overview",
+    "icon": "lucide:layout-dashboard",
+    "isHome": true,
+    "groupIds": [
+      {
+        "$oid": "7000000000000000001d0001"
+      },
+      {
+        "$oid": "7000000000000000001d0002"
+      }
+    ],
+    "statusId": {
+      "$oid": "700000000000000000140001"
+    },
+    "gridsterConfigId": {
+      "$oid": "700000000000000000050003"
+    },
+    "tiles": [
+      {
+        "windowId": {
+          "$oid": "6a2471dd644b16df299df3a9"
+        },
+        "x": 0,
+        "y": 0,
+        "cols": 18,
+        "rows": 4
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471de644b16df299df564"
+        },
+        "x": 18,
+        "y": 0,
+        "cols": 6,
+        "rows": 4
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471e0644b16df299df84c"
+        },
+        "x": 0,
+        "y": 4,
+        "cols": 7,
+        "rows": 8
       },
       {
         "windowId": {
           "$oid": "910000000000000000020001"
         },
-        "x": 0,
+        "x": 7,
         "y": 4,
+        "cols": 5,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "910000000000000000020003"
+        },
+        "x": 12,
+        "y": 4,
+        "cols": 7,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "910000000000000000020002"
+        },
+        "x": 19,
+        "y": 4,
+        "cols": 5,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471e2644b16df299df86f"
+        },
+        "x": 0,
+        "y": 12,
+        "cols": 8,
+        "rows": 9
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471e4644b16df299df873"
+        },
+        "x": 8,
+        "y": 12,
+        "cols": 16,
+        "rows": 9
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471e6644b16df299df88c"
+        },
+        "x": 0,
+        "y": 21,
+        "cols": 6,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471e9644b16df299dfa0c"
+        },
+        "x": 6,
+        "y": 21,
+        "cols": 6,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471e9644b16df299dfd58"
+        },
+        "x": 12,
+        "y": 21,
         "cols": 12,
-        "rows": 4
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471eb644b16df299dfd61"
+        },
+        "x": 0,
+        "y": 29,
+        "cols": 8,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471ed644b16df299dfd97"
+        },
+        "x": 8,
+        "y": 29,
+        "cols": 16,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471ee644b16df299dfdc8"
+        },
+        "x": 0,
+        "y": 37,
+        "cols": 8,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471f1644b16df299dfde1"
+        },
+        "x": 8,
+        "y": 37,
+        "cols": 8,
+        "rows": 8
+      },
+      {
+        "windowId": {
+          "$oid": "6a2471f2644b16df299e026f"
+        },
+        "x": 16,
+        "y": 37,
+        "cols": 8,
+        "rows": 8
       }
     ],
     "systemManaged": true

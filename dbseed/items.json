@@ -128,5 +128,471 @@
     },
     "tier": 1,
     "kind": "transaction"
+  },
+  {
+    "_id": {
+      "$oid": "6a221a15fb16ca24d92d621f"
+    },
+    "key": "free_offroad_categories",
+    "collection": "free_offroad_categories",
+    "title": "Off-Road Categories",
+    "titleSingular": "Category",
+    "titlePlural": "Categories",
+    "icon": "lucide:layers",
+    "appId": {
+      "$oid": "910000000000000000000001"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Category"
+        },
+        "description": {
+          "type": "string",
+          "title": "Description"
+        },
+        "bestFor": {
+          "type": "string",
+          "title": "Best for"
+        }
+      }
+    },
+    "ui": {
+      "prefabs": {
+        "list": "list",
+        "edit": "edit",
+        "show": "show"
+      },
+      "display": {
+        "templates": [
+          "{{name}}"
+        ]
+      }
+    },
+    "api": {
+      "crud": true,
+      "realtime": true
+    },
+    "auth": {
+      "read": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "create": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "edit": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "delete": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          }
+        ]
+      }
+    },
+    "tier": 1,
+    "kind": "transaction"
+  },
+  {
+    "_id": {
+      "$oid": "6a221a19fb16ca24d92d660f"
+    },
+    "key": "free_offroad_locations",
+    "collection": "free_offroad_locations",
+    "title": "Off-Road Locations",
+    "titleSingular": "Location",
+    "titlePlural": "Locations",
+    "icon": "lucide:map-pin",
+    "appId": {
+      "$oid": "910000000000000000000001"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Location"
+        },
+        "region": {
+          "type": "string",
+          "title": "Region"
+        },
+        "distanceFromBudapestKm": {
+          "type": "number",
+          "title": "Distance from Budapest (km)"
+        }
+      }
+    },
+    "ui": {
+      "prefabs": {
+        "list": "list",
+        "edit": "edit",
+        "show": "show"
+      },
+      "display": {
+        "templates": [
+          "{{name}}"
+        ]
+      }
+    },
+    "api": {
+      "crud": true,
+      "realtime": true
+    },
+    "auth": {
+      "read": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "create": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "edit": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "delete": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          }
+        ]
+      }
+    },
+    "tier": 1,
+    "kind": "transaction"
+  },
+  {
+    "_id": {
+      "$oid": "6a221a11fb16ca24d92d620b"
+    },
+    "key": "free_offroad_makes",
+    "collection": "free_offroad_makes",
+    "title": "Off-Road Makes",
+    "titleSingular": "Make",
+    "titlePlural": "Makes",
+    "icon": "lucide:badge",
+    "appId": {
+      "$oid": "910000000000000000000001"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "name"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "title": "Make"
+        },
+        "country": {
+          "type": "string",
+          "title": "Country"
+        },
+        "reputation": {
+          "type": "string",
+          "title": "Reputation",
+          "description": "Why off-roaders rate this brand."
+        }
+      }
+    },
+    "ui": {
+      "prefabs": {
+        "list": "list",
+        "edit": "edit",
+        "show": "show"
+      },
+      "display": {
+        "templates": [
+          "{{name}}"
+        ]
+      }
+    },
+    "api": {
+      "crud": true,
+      "realtime": true
+    },
+    "auth": {
+      "read": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "create": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "edit": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "delete": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          }
+        ]
+      }
+    },
+    "tier": 1,
+    "kind": "transaction"
+  },
+  {
+    "_id": {
+      "$oid": "6a221a25fb16ca24d92d6a3a"
+    },
+    "key": "free_offroad_vehicles",
+    "collection": "free_offroad_vehicles",
+    "title": "Off-Road Vehicles for Sale",
+    "titleSingular": "Vehicle",
+    "titlePlural": "Vehicles",
+    "description": "Used off-road / 4x4 vehicles for sale around Budapest. Representative snapshot of the Hungarian market — the decision table for picking what to drive. Each row x-refs a make, a category, and a location.",
+    "icon": "lucide:car-front",
+    "appId": {
+      "$oid": "910000000000000000000001"
+    },
+    "schema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "title",
+        "makeId"
+      ],
+      "properties": {
+        "title": {
+          "type": "string",
+          "title": "Listing"
+        },
+        "makeId": {
+          "type": "string",
+          "title": "Make",
+          "x-ref": "free_offroad_makes"
+        },
+        "model": {
+          "type": "string",
+          "title": "Model"
+        },
+        "categoryId": {
+          "type": "string",
+          "title": "Category",
+          "x-ref": "free_offroad_categories"
+        },
+        "locationId": {
+          "type": "string",
+          "title": "Location",
+          "x-ref": "free_offroad_locations"
+        },
+        "year": {
+          "type": "number",
+          "title": "Year"
+        },
+        "priceEur": {
+          "type": "number",
+          "title": "Price (€)"
+        },
+        "priceHuf": {
+          "type": "number",
+          "title": "Price (HUF)"
+        },
+        "mileageKm": {
+          "type": "number",
+          "title": "Mileage (km)"
+        },
+        "fuel": {
+          "type": "string",
+          "title": "Fuel",
+          "enum": [
+            "petrol",
+            "diesel",
+            "lpg",
+            "hybrid"
+          ]
+        },
+        "transmission": {
+          "type": "string",
+          "title": "Gearbox",
+          "enum": [
+            "manual",
+            "automatic"
+          ]
+        },
+        "driveType": {
+          "type": "string",
+          "title": "Drive",
+          "enum": [
+            "part_time_4x4",
+            "full_time_4x4",
+            "awd"
+          ]
+        },
+        "powerHp": {
+          "type": "number",
+          "title": "Power (HP)"
+        },
+        "engineL": {
+          "type": "number",
+          "title": "Engine (L)"
+        },
+        "condition": {
+          "type": "string",
+          "title": "Condition",
+          "enum": [
+            "excellent",
+            "good",
+            "fair",
+            "project"
+          ]
+        },
+        "sellerType": {
+          "type": "string",
+          "title": "Seller",
+          "enum": [
+            "private",
+            "dealer"
+          ]
+        },
+        "offroadScore": {
+          "type": "number",
+          "title": "Off-road score (1-10)"
+        },
+        "valueScore": {
+          "type": "number",
+          "title": "Value score (1-10)"
+        },
+        "notes": {
+          "type": "string",
+          "title": "Notes",
+          "x-ui": {
+            "format": "markdown"
+          }
+        }
+      }
+    },
+    "ui": {
+      "prefabs": {
+        "list": "list",
+        "edit": "edit",
+        "show": "show"
+      },
+      "display": {
+        "templates": [
+          "{{title}}"
+        ]
+      }
+    },
+    "api": {
+      "crud": true,
+      "realtime": true
+    },
+    "auth": {
+      "read": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "create": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "edit": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          },
+          {
+            "$oid": "7000000000000000001d0002"
+          }
+        ]
+      },
+      "delete": {
+        "groupIds": [
+          {
+            "$oid": "7000000000000000001d0001"
+          }
+        ]
+      }
+    },
+    "tier": 1,
+    "kind": "transaction"
   }
 ]
