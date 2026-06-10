@@ -6,19 +6,48 @@
   "requiresCore": true,
   "collections": [
     {
+      "collection": "groups",
+      "file": "groups.json",
+      "matchBy": "keyLower",
+      "installMode": "shared",
+      "exportFields": [
+        "key",
+        "name",
+        "description",
+        "permissions"
+      ]
+    },
+    {
       "collection": "apps",
       "file": "apps.json",
       "matchBy": "key",
       "installMode": "shared",
-      "exportFields": ["key", "name", "description", "icon", "enabled", "groupIds", "ai"],
-      "filter": { "key": "free" }
+      "exportFields": [
+        "key",
+        "name",
+        "description",
+        "icon",
+        "enabled",
+        "groupIds",
+        "ai"
+      ],
+      "filter": {
+        "key": "free"
+      }
     },
     {
       "collection": "users",
       "file": "users.json",
       "matchBy": "_id",
       "installMode": "shared",
-      "exportFields": ["username", "usernameLower", "isFunctional", "isSystem", "appId", "groupIds"]
+      "exportFields": [
+        "username",
+        "usernameLower",
+        "isFunctional",
+        "isSystem",
+        "appId",
+        "groupIds"
+      ]
     },
     {
       "collection": "items",
@@ -42,14 +71,26 @@
         "tier",
         "kind"
       ],
-      "filter": { "appId": "<thisAppId>" }
+      "filter": {
+        "appId": "<thisAppId>"
+      }
     },
     {
       "collection": "item_chart_views",
       "file": "item_chart_views.json",
       "matchBy": "_id",
       "installMode": "installConfig",
-      "exportFields": ["modelId", "name", "data", "map", "builder", "isDefault", "pinned", "order", "systemManaged"]
+      "exportFields": [
+        "modelId",
+        "name",
+        "data",
+        "map",
+        "builder",
+        "isDefault",
+        "pinned",
+        "order",
+        "systemManaged"
+      ]
     },
     {
       "collection": "item_tree_views",
@@ -105,37 +146,87 @@
       "file": "free_demo_weather.json",
       "matchBy": "_id",
       "installMode": "installStarterData",
-      "exportFields": ["day", "date", "highC", "lowC", "condition", "precipMm"]
+      "exportFields": [
+        "day",
+        "date",
+        "highC",
+        "lowC",
+        "condition",
+        "precipMm"
+      ]
     },
     {
       "collection": "dashboards",
       "file": "dashboards.json",
       "matchBy": "_id",
       "installMode": "installConfig",
-      "exportFields": ["appId", "name", "icon", "isHome", "interactive", "groupIds", "statusId", "gridsterConfigId", "tiles", "systemManaged"]
+      "exportFields": [
+        "appId",
+        "name",
+        "icon",
+        "isHome",
+        "interactive",
+        "groupIds",
+        "statusId",
+        "gridsterConfigId",
+        "tiles",
+        "systemManaged"
+      ]
     },
     {
       "collection": "windows",
       "file": "windows.json",
       "matchBy": "_id",
       "installMode": "installConfig",
-      "exportFields": ["dashboardId", "title", "icon", "groupIds", "modelId", "prefabId", "prefabConfig", "systemManaged"]
+      "exportFields": [
+        "dashboardId",
+        "title",
+        "icon",
+        "groupIds",
+        "modelId",
+        "prefabId",
+        "prefabConfig",
+        "systemManaged"
+      ]
     },
     {
       "collection": "coding_agent_skills",
       "file": "coding_agent_skills.json",
       "matchBy": "_id",
       "installMode": "shared",
-      "exportFields": ["key", "name", "description", "instructions", "tags", "categoryId", "repoId", "systemManaged", "groupIds"],
-      "filter": { "key": "free-playground-visualization" }
+      "exportFields": [
+        "key",
+        "name",
+        "description",
+        "instructions",
+        "tags",
+        "categoryId",
+        "repoId",
+        "systemManaged",
+        "groupIds"
+      ],
+      "filter": {
+        "key": "free-playground-visualization"
+      }
     },
     {
       "collection": "chat_skills",
       "file": "chat_skills.json",
       "matchBy": "_id",
       "installMode": "shared",
-      "exportFields": ["key", "name", "description", "instructions", "tags", "appId", "systemManaged", "groupIds"],
-      "filter": { "appId": "<thisAppId>" }
+      "exportFields": [
+        "key",
+        "name",
+        "description",
+        "instructions",
+        "tags",
+        "appId",
+        "systemManaged",
+        "groupIds"
+      ],
+      "filter": {
+        "appId": "<thisAppId>"
+      }
     }
   ]
 }
