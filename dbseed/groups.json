@@ -4,27 +4,23 @@
       "$oid": "910000000000000000040001"
     },
     "key": "free_admin",
-    "keyLower": "free_admin",
     "name": "Free Admin",
     "description": "Administrative access to Free: create, edit, and delete demo data models. Assigned to the free-backend functional user.",
     "permissions": [],
     "appId": {
       "$oid": "910000000000000000000001"
-    },
-    "systemManaged": true
+    }
   },
   {
     "_id": {
       "$oid": "910000000000000000040002"
     },
     "key": "free_viewer",
-    "keyLower": "free_viewer",
     "name": "Free Viewer",
     "description": "Read-only access to Free. Reserved for future use — most demo data is already world-readable via the everyone group.",
     "permissions": [],
     "appId": {
       "$oid": "910000000000000000000001"
-    },
-    "systemManaged": true
+    }
   }
 ]
